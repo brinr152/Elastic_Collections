@@ -1,0 +1,26 @@
+.single{
+	width: 30%;
+	float: left;
+	margin: 1.5%;
+	background-color: #89CFF0;
+}
+.low {
+	background-color: red;
+}
+
+.titles {
+	text-align: center;
+	line-height: 70%;
+	font-family: ff-good-web-pro, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: white;
+}
+
+.mass {
+	text-align: center;
+	font-family: ff-good-web-pro, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: white;
+}
