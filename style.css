@@ -1,17 +1,82 @@
+body{
+	background-color: #f9fbfe;
+}
+
 .single{
 	width: 30%;
 	float: left;
 	margin: 1.5%;
 	background-color: #89CFF0;
 }
-.low {
+.big{
+	width: 30%;
+	float: left;
+	margin: 1.5%;
 	background-color: red;
+}
+.first {
+	background-color: #2f7fdd;
+}
+.second {
+	background-color: #448ce0;
+}
+.third {
+	background-color: #5999e4;
+}
+.forth {
+	background-color: #6da5e7;
+}
+.fifth {
+	background-color: #82b2eb;
+}
+.sixth {
+	background-color: #97bfee;
+}
+.seventh {
+	background-color: #acccf1;
+}
+.eighth {
+	background-color: #c0d9f5;
+}
+.ninth {
+	background-color: #d5e5f8;
+}
+.tenth {
+	background-color: #e9f2fc;
+}
+
+.big {
+	width: 96%;
+	float: left;
+	height: 500px;
+	font-size: 30pt;
+}
+
+
+#title{
+	text-align: center;
+	margin-bottom: 0%;
+	font-family: century-gothic, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 30pt;
+	color: #2f7fdd;
+
+}
+#sub {
+	text-align: center;
+	margin-top: 0%;
+	font-family: century-gothic, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 20pt;
+	color: #2f7fdd;
 }
 
 .titles {
 	text-align: center;
 	line-height: 70%;
-	font-family: ff-good-web-pro, sans-serif;
+	font-family: century-gothic, sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	color: white;
@@ -19,8 +84,12 @@
 
 .mass {
 	text-align: center;
-	font-family: ff-good-web-pro, sans-serif;
+	font-family: century-gothic, sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	color: white;
+}
+
+.dark{
+	color: #5999e4;
 }

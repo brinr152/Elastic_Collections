@@ -56,30 +56,85 @@ function showPoints() {
    dateYear.innerText = point.fields.year;
    singleContainer.append(dateYear);
 
+
+
    var dateDay = document.createElement("h1");
    dateDay.classList.add("titles");
    dateDay.innerText = point.fields.day;
    singleContainer.append(dateDay);
 
-   var mass = document.createElement("p");
+   var mass = document.createElement("h1");
    mass.classList.add("mass");
    mass.innerText = point.fields.antarctic_mass;
    singleContainer.append(mass);
 
+
    var antarctic_mass = point.fields.antarctic_mass;
 
- if (antarctic_mass > 0) {
-     singleContainer.classList.add("low")
+
+ if (antarctic_mass >= 0) {
+     singleContainer.classList.add("first")
   }
 
-  singleContainer.addEventListener("click", function(){
-    let mass_span = document.querySelector("current_mass");
-    mass_span.innerText = antarctic_mass;
+ if (antarctic_mass < 0 && antarctic_mass >= -100) {
+     singleContainer.classList.add("second")
+    }
 
-  });
+  if (antarctic_mass < -100 && antarctic_mass >= -250) {
+     singleContainer.classList.add("third")
+    }
 
-  });
+  if (antarctic_mass < -250 && antarctic_mass >= -425) {
+     singleContainer.classList.add("forth")
+    }
 
+  if (antarctic_mass < -425 && antarctic_mass >= -625) {
+     singleContainer.classList.add("forth")
+    }
+
+  if (antarctic_mass < -625 && antarctic_mass >= -850) {
+     singleContainer.classList.add("fifth")
+    }
+
+  if (antarctic_mass < -850 && antarctic_mass >= -1100) {
+     singleContainer.classList.add("sixth")
+    }
+
+  if (antarctic_mass < -1100 && antarctic_mass >= -1375) {
+     singleContainer.classList.add("seventh")
+    }
+
+  if (antarctic_mass < -1375 && antarctic_mass >= -1650) {
+     singleContainer.classList.add("eighth")
+    }
+
+  if (antarctic_mass < -1650 && antarctic_mass >= -1950) {
+     singleContainer.classList.add("ninth")
+    }
+
+  if (antarctic_mass < -1650) {
+     singleContainer.classList.add("tenth")
+    }
+
+  if (antarctic_mass < -1650){
+    dateYear.classList.add("dark")
+  }
+  if (antarctic_mass < -1650){
+    dateDay.classList.add("dark")
+  }
+  if (antarctic_mass < -1650){
+    mass.classList.add("dark")
+  }
+
+
+ singleContainer.addEventListener("click", function(){
+    singleContainer.classList.toggle("big")
+
+    //dateYear.push("Year; ")
+    document.querySelector(".titles").append("Year")
+  }); 
+
+});
 
   
 }
