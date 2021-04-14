@@ -74,6 +74,8 @@ body{
 }
 
 .titles {
+	margin-top: 4%;
+	margin-bottom: 1%;
 	text-align: center;
 	line-height: 70%;
 	font-family: century-gothic, sans-serif;
@@ -81,8 +83,23 @@ body{
 	font-style: normal;
 	color: white;
 }
-
+.under {
+	display: none;
+	margin: 1.5%;
+	text-align: center;
+	line-height: 80%;
+	font-family: century-gothic, sans-serif;
+	font-weight: 400;
+	font-size: 20pt;
+	font-style: normal;
+	color: white;
+}
+.under_seen{
+	display: block;
+}
 .mass {
+	margin-top: 4%;
+	margin-bottom: 1%;
 	text-align: center;
 	font-family: century-gothic, sans-serif;
 	font-weight: 400;

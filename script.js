@@ -56,18 +56,30 @@ function showPoints() {
    dateYear.innerText = point.fields.year;
    singleContainer.append(dateYear);
 
-
+   var year = document.createElement("h3");
+   year.classList.add("under");
+   year.innerText = "Year";
+   singleContainer.append(year);
 
    var dateDay = document.createElement("h1");
    dateDay.classList.add("titles");
    dateDay.innerText = point.fields.day;
    singleContainer.append(dateDay);
 
+   var day = document.createElement("h3");
+   day.classList.add("under", "day");
+   day.innerText = "Day of the year (out of 365)";
+   singleContainer.append(day);
+
    var mass = document.createElement("h1");
    mass.classList.add("mass");
    mass.innerText = point.fields.antarctic_mass;
    singleContainer.append(mass);
 
+  var kilo = document.createElement("h3");
+   kilo.classList.add("under");
+   kilo.innerText = "Antarctic Mass Variation (Gigatonnes)";
+   singleContainer.append(kilo);
 
    var antarctic_mass = point.fields.antarctic_mass;
 
@@ -126,12 +138,23 @@ function showPoints() {
     mass.classList.add("dark")
   }
 
+  if (antarctic_mass < -1650){
+    year.classList.add("dark")
+  }
+  if (antarctic_mass < -1650){
+    day.classList.add("dark")
+  }
+  if (antarctic_mass < -1650){
+    kilo.classList.add("dark")
+  }
+
 
  singleContainer.addEventListener("click", function(){
     singleContainer.classList.toggle("big")
+    year.classList.toggle("under_seen")
+    day.classList.toggle("under_seen")
+    kilo.classList.toggle("under_seen")
 
-    //dateYear.push("Year; ")
-    document.querySelector(".titles").append("Year")
   }); 
 
 });
